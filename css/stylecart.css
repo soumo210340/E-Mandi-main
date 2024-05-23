@@ -1,0 +1,29 @@
+nav {
+  margin-bottom: 1em !important;
+}
+.navheading{
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+}
+.cart {
+  box-shadow: 0 0 5px #DDD;
+  padding: 20px;
+  position: fixed;
+}
+
+.pro
+{
+  font-family: 'Montserrat', sans-serif;
+}
+.cartbtn{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+}
+@media only screen and (max-width: 600px) {
+  
+  .cart {
+    box-shadow: 0 0 5px #DDD;
+    padding: 20px;
+    position:relative;
+  }
+}

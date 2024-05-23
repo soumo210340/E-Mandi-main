@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>Cart | Products</title>
+
+    <link rel="icon" href="images/icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/5.0.2/css/foundation.css'>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/stylecart.css">
+	
+  
+  </head>
+  <body>
+ 
+  
+      
+ <main>
+     <!-- Start DEMO HTML (Use the following code into your project)-->
+        <div class="row topbar ">
+            <nav class="top-bar navheading" data-topbar>
+                <ul class="title-area">
+                    <li class="name">
+                        <h1 class="navheading"><a href="#">E-Mandi</a></h1>
+                    </li>
+                </ul>
+                <section class="top-bar-section">
+                    <ul class="left">
+                        <li >
+                            <p class="navheading"> <a href="home.html">Home </a></p>
+                        </li>
+                        
+                    </ul>
+                </section>
+            </nav>
+            <div class="medium-4  columns">
+                <div class="cart pro">
+                    <h3>Cart items</h3>
+                    <div class="row">
+                        <div class=" medium-12 columns">
+                            <button class=" secondary cartbtn" id="clear">Clear cart</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="cartItems">Loading cart...</div>
+                    Total price: ₹<strong id="totalPrice">0 </strong>
+                    <br><br><br>
+                    <div class="row">
+                        <div class=" medium-6 columns">
+                            <button class=" disabled cartbtn" title="Work in progress">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="medium-8 columns pro">
+                <h4>Items</h4>
+                <div class="products">
+                    <div class="product medium-4 columns" data-name="Potato" data-price="30" data-id="0">
+                        <img src="./images/potato.png" alt="Orange" />
+                        <h4>Potato</h4>
+                        <h4>₹30/kg</h4>
+                        <input type="text" class="count" value="1" />
+                        <button class="tiny">Add to cart</button>
+                    </div>
+                    <div class="product medium-4 columns" data-name="Apple" data-price="120" data-id="1">
+                        <img src="./images/apple.jpg" alt="Apple" />
+                        <h4>Apple</h4>
+                        <h4>₹120/kg</h4>
+                        <input type="text" class="count" value="1" />
+                        <button class="tiny">Add to cart</button>
+                    </div>
+                    <div class="product medium-4 columns" data-name="Carrot" data-price="80" data-id="2">
+                        <img src="./images/carrot.png"alt="Peach" />
+                        <h4>Carrot</h4><h4>₹80/kg</h4>
+                        <input type="text" class="count" value="1" />
+                        <button class="tiny">Add to cart</button>
+                    </div>
+                    <div class="product medium-4 columns" data-name="Rice" data-price="20" data-id="3">
+                        <img src="./images/rice.png" alt="Orange" />
+                        <h4>Rice</h4>
+                        <h4>₹20/kg</h4>
+                        <input type="text" class="count" value="1" />
+                        <button class="tiny">Add to cart</button>
+                    </div>
+                    <div class="product medium-4 columns" data-name="Brinjal" data-price="50" data-id="4">
+                        <img src="./images/brinjal.png" alt="Brinjal" />
+                        <h4>Brinjal</h4>
+                        <h4>₹50/kg</h4>
+                        <input type="text" class="count" value="1" />
+                        <button class="tiny">Add to cart</button>
+                    </div>
+                    <div class="product medium-4 columns" data-name="Cucumber" data-price="35" data-id="5">
+                        <img src="./images/cucu.png"alt="Cucumber" />
+                        <h4>Cucumber</h4><h4>₹35/kg</h4>
+                        <input type="text" class="count" value="1" />
+                        <button class="tiny">Add to cart</button>
+                    </div>
+                    
+                    <div class="product medium-4 columns" data-name="Potato" data-price="45" data-id="6">
+                        <img src="./images/tomato.png" alt="Tomato" />
+                        <h4>Tomato</h4>
+                        <h4>₹45/kg</h4>
+                        <input type="text" class="count" value="1" />
+                        <button class="tiny">Add to cart</button>
+                    </div>
+                    <div class="product medium-4 columns" data-name="Apple" data-price="25" data-id="7">
+                        <img src="./images/gourd.png" alt="Gourd" />
+                        <h4>Grourd</h4>
+                        <h4>₹25/kg</h4>
+                        <input type="text" class="count" value="1" />
+                        <button class="tiny">Add to cart</button>
+                    </div>
+                    <div class="product medium-4 columns" data-name="Carrot" data-price="15" data-id="8">
+                        <img src="./images/onion.png"alt="Onion" />
+                        <h4>Onion</h4><h4>₹15/kg</h4>
+                        <input type="text" class="count" value="1" />
+                        <button class="tiny">Add to cart</button>
+                    </div>
+                    <div class="product medium-4 columns" data-name="Rice" data-price="20" data-id="9">
+                        <img src="./images/radish.png" alt="Radish" />
+                        <h4>Radish</h4>
+                        <h4>₹20/kg</h4>
+                        <input type="text" class="count" value="1" />
+                        <button class="tiny">Add to cart</button>
+                    </div>
+                    <div class="product medium-4 columns" data-name="Brinjal" data-price="35" data-id="10">
+                        <img src="./images/guava.png" alt="Guava" />
+                        <h4>Guava</h4>
+                        <h4>₹35/kg</h4>
+                        <input type="text" class="count" value="1" />
+                        <button class="tiny">Add to cart</button>
+                    </div>
+                    <div class="product medium-4 columns" data-name="Papaya" data-price="25" data-id="5">
+                        <img src="./images/papaya.png"alt="Papaya" />
+                        <h4>Papaya</h4><h4>₹25/kg</h4>
+                        <input type="text" class="count" value="1" />
+                        <button class="tiny">Add to cart</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <script type="text/template" id="cartT">
+    <% _.each(items, function (item) { %> <div class = "panel"> <h5> <%= item.name %> </h5>  <span class="label">
+    <%= item.count %> kg<% if(item.count > 1)
+    {%>s
+    <%}%> for ₹ <%= item.total %></span > </div>
+    <% }); %>
+    </script>
+
+
+        
+    </main>
+    
+        
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js'></script>
+    <script  src="./js/script.js"></script>
+      
+  </body>
+</html>

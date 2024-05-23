@@ -1,0 +1,19 @@
+{
+  "name": "e-mandi",
+  "version": "1.0.0",
+  "description": "A user friendly website for farmer and retailer.",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Ravi Raj",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "owl.carousel": "^2.3.4"
+  }
+}
